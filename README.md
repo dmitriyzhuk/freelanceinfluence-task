@@ -46,7 +46,7 @@ Just use `limit` param for this call, other params are used for pagination and y
 
 Fetched data should be saved to store (same store as from create task response), and task list should be displayed in dashboard under user profile info. When you create a new task it should be added to the top of the list.
 
-### 4. Make everything look nicer
+### 4. Make everything look nicer.
 
 Style up profile info in dashboard, display only first and last name for both marketer and influencer state. Style up task creation form. Style up Tasks list in dashboard: display task title, description, budget, proposalCount, platforms and addedTime.
 NOTE: it doesn't have to be fancy styled, make it look a bit nicer than plain objects, simple styles will be enough. Doesn't have to be responsive, just make it look good on desktops.
