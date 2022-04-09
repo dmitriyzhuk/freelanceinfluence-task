@@ -23,21 +23,10 @@
   </main>
 </template>
 
-<script lang="ts">
+<script lang="ts" setup>
 import useLogin from '@/components/login/login'
-import { defineComponent } from 'vue'
 
-export default defineComponent({
-  name: 'Login',
-  setup() {
-    const { user, login } = useLogin()
-
-    return {
-      user,
-      login,
-    }
-  },
-})
+const { user, login } = useLogin()
 </script>
 
 <style lang="scss" scoped>

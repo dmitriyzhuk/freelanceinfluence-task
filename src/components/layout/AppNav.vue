@@ -8,30 +8,20 @@
   </nav>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script lang="ts" setup>
 import { useRouter } from 'vue-router'
+import { paths } from '@/router/paths'
 import useAuthStore from '@/store/auth'
 import useUserAuthentificationController from '@/controllers/useUserAuthentificationController'
 
-export default defineComponent({
-  name: 'AppNav',
-  setup() {
-    const router = useRouter()
-    const { isAuthenticated } = useAuthStore()
-    const authController = useUserAuthentificationController()
+const router = useRouter()
+const { isAuthenticated } = useAuthStore()
+const authController = useUserAuthentificationController()
 
-    const logout = () => {
-      authController.logout()
-      router.push({ name: 'Login' })
-    }
-
-    return {
-      isAuthenticated,
-      logout,
-    }
-  },
-})
+const logout = () => {
+  authController.logout()
+  router.push(paths.login)
+}
 </script>
 
 <style lang="scss" scoped>
