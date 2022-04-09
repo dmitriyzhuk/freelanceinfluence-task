@@ -25,7 +25,7 @@ password: vpgrk@hi2.in
 Login endpoint returns user data and it is displayed in dashboard. If you refresh the app you are still logged in but user profile data is no longer there. In this subtask you have to use proper endpoint from api to fetch user data and save it in store.
 https://influespace.com/api/swagger-ui/index.html?configUrl=/api/v3/api-docs/swagger-config#/user-management-controller/getMyProfile
 
-### 2. Implement create task feature
+### 2. Implement create task feature.
 
 In this subtask you have to implement create task feature. Endpoint, schema and response can be found on swagger:
 https://influespace.com/api/swagger-ui/index.html?configUrl=/api/v3/api-docs/swagger-config#/task-controller/addTask
